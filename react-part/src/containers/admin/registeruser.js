@@ -26,7 +26,7 @@ const RegisterUser = () => (
         };
         fetch("http://localhost:3000/register", requestOptions)
           .then((res) => res.json())
-          .then(data=>alert(data.msg));
+          .then((data) => alert(data.msg));
       }}
     >
       {({ errors, touched }) => (

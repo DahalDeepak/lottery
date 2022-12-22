@@ -22,24 +22,9 @@ const connect = async () => {
   }
 };
 connect();
-// const tiketLists = [
-//   { ticket: 32, backgroundColor: "red" },
-//   { ticket: 66, backgroundColor: "blue" },
-//   { ticket: 88, backgroundColor: "green" },
-//   { ticket: 90, backgroundColor: "pink" },
-//   { ticket: 100, backgroundColor: "yellow" },
-// ];
-
-// app.get("/ticket", (req, res) => {
-//   res.json({
-//     ticketList: tiketLists,
-//     winnerTicket: winnerTicket,
-//   });
-// });
+// gettin data from ticket so that we can show them on frontend
 app.get("/ticket", async (req, res) => {
-  // const data = await Users.find();
-  // res.json({ ticket: data });
-
+ 
   try {
     const data = await Users.find();
     res.json({
@@ -50,11 +35,31 @@ app.get("/ticket", async (req, res) => {
   }
 });
 
+app.get('/users',async (req, res)=> {
+  const usersList = await Users.findOne({name: req.query.name})
+  const searchWinColor = await Winner.findOne({ticketNo: req.query.ticketNo})
+  if(searchWinColor?.color === req.query.color && usersList){
+    res.json({
+        msg: "hurray! wiiner winner chicken dinner"
+    })
+  }else{
+      if(!usersList){
+          res.json({
+            errMsg: 'not registered'
+          })
+      }else{
+          res.json({
+              errMsg: 'you have lost'
+          })
+      }
+  }
+
+})
 app.get("/tickets/:ticketno", (req, res) => {
   console.log(req.params.ticketno);
 });
 // prarams is like query here we are already define that ticket no  is coming or we
-// post is used to post
+// post is used to post anything in database
 app.post("/tickets", (req, res) => {
   console.log("hi");
   console.log(req);
@@ -72,7 +77,6 @@ const Users = mongoose.model("Users", usersSchema);
 // app.post("/admin", async (req, res) => {
 //   try{const data = await Users.create(req.body);
 //   res.json({ data: data });}
-
 // });
 app.post("/register", async (req, res) => {
   try {
@@ -98,6 +102,7 @@ app.post("/register", async (req, res) => {
     console.log(err);
   }
 });
+// creating collection in a database for winner
 const winnerSchema = new Schema(
   {
     color: { type: String },
@@ -107,7 +112,7 @@ const winnerSchema = new Schema(
 );
 const Winner = mongoose.model("Winner", winnerSchema);
 
-//
+// for saving winner information in database
 app.post("/winner", async (req, res) => {
   try {
     const data = await Winner.create(req.body);

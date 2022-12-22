@@ -1,7 +1,26 @@
-.list{
-   text-align: start;
-
-   text-align: center;
-    padding: 1px;
-    margin-top: 1px;
+/* .list {
+  text-align: start;
+  text-align: center;
+  padding: 1px;
+  margin-top: 1px;
+} */
+.table-div {
+  border: 1px solid rgb(200, 25, 25);
+  padding: 2px;
+  background-color: lightyellow;
+  list-style: none;
+}
+.table {
+  padding: 12px;
+  border: 2px solid rgb(7, 7, 7);
+  width: 50%;
+}
+.tabledata {
+  border: 4px solid rgb(37, 37, 37);
+  text-align: center;
+}
+.tablerow {
+  /* margin:unset; */
+  color: aqua;
+  background: #000;
 }
