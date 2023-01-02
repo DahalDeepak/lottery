@@ -12,8 +12,9 @@ In this project, I have covered the following topics: React, Node.js, Express.js
  (7) Save the database from the frontend in the database.   <br/>
  
  <h1> Here are some Screenshots </h1>
-![Screenshot (98)](https://user-images.githubusercontent.com/86339152/210210672-eb03f999-4ac5-4498-9ff9-2003feb40624.png)
-![Screenshot (99)](https://user-images.githubusercontent.com/86339152/210210675-d7b77466-18a3-4964-bed1-f4ae6095e85d.png)
-![Screenshot (93)](https://user-images.githubusercontent.com/86339152/210210679-edc75921-49e0-41de-ba57-40e427e67d59.png)
-![Screenshot (94)](https://user-images.githubusercontent.com/86339152/210210682-aad13297-d1ac-4504-9fe3-7cdc0f54f814.png)
-![Screenshot (95)](https://user-images.githubusercontent.com/86339152/210210683-1abf2598-c1d5-4718-bf73-d7dc790e7caf.png)
+ <img alt="register" src="https://user-images.githubusercontent.com/86339152/210210672-eb03f999-4ac5-4498-9ff9-2003feb40624.png"/> <br/>
+  <img alt="register" src="https://user-images.githubusercontent.com/86339152/210210675-d7b77466-18a3-4964-bed1-f4ae6095e85d.png"/> <br/>
+  <img alt="register" src="https://user-images.githubusercontent.com/86339152/210210679-edc75921-49e0-41de-ba57-40e427e67d59.png"/> <br/>
+   <img alt="register" src="https://user-images.githubusercontent.com/86339152/210210682-aad13297-d1ac-4504-9fe3-7cdc0f54f814.png"/> <br/>
+    <img alt="register" src="https://user-images.githubusercontent.com/86339152/210210683-1abf2598-c1d5-4718-bf73-d7dc790e7caf.png"/> <br/>
+
