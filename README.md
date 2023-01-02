@@ -1,6 +1,6 @@
 # lottery
 This is the starter project, which covers the most important topic of mern, and I made it to learn and practice.
-This is a basic Mern project. I made this project while learning Node and Express JS. This is not a real-life applicable or ready-to-deploy web app since I have not done any research or made a better UI, which may be a lot different than the actual lottery system.
+This is a basic Mern project. I made this project while learning Node and Express JS. This is not a real-life applicable or ready-to-deploy web app since I have not done any research or made a better UI, which may be a lot different than the actual lottery system.  <br/>
 In this project, I have covered the following topics: <h4> React, Node.js, Express.js, and MongoDB <h4>
  <br/>
  (1) How to use react hooks like useState and useEffect.  <br/>
